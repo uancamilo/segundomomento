@@ -7,17 +7,19 @@
 /* Estilo del menú de navegación */
 
 nav {
+    position: sticky;
+    background-color: white; /* Color de fondo del navbar */
+    margin-top: 5px;
 	height: 60px;
 	align-content: center;
 }
 
 nav ul {
 	list-style-type: none;
-	padding: 0;
 	margin: 0 auto; /* Centra el componente horizontalmente */
 	display: flex;
 	justify-content: center; /* Centra los elementos hijos horizontalmente dentro del componente */
-	max-width: 1152px;
+    max-width: 1152px;
     gap: 10px;
 }
 
