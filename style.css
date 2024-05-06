@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Estilo del menú de navegación */
+
+nav {
+	height: 60px;
+	align-content: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto; /* Centra el componente horizontalmente */
+	display: flex;
+	justify-content: center; /* Centra los elementos hijos horizontalmente dentro del componente */
+	max-width: 1152px;
+    gap: 10px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: inherit; /* Usa el color del texto heredado */
+	display: inline-block; /* Permite establecer un ancho y altura a los enlaces */
+	padding: 20px 16px; /* Agrega un espacio interno a los enlaces */
+	border-radius: 10px; /* Redondea las esquinas del borde */
+}
+
+nav ul li a:hover:not(.link-contacto) {
+	color: #000000; /* Cambia el color del texto a negro */
+	opacity: 0.5; /* Reduce la opacidad al 50% */
+}
+
+nav ul li.contacto {
+	border-radius: 10px;
+	color: aliceblue;
+	background-color: #257670;
+}
+
+nav ul li.contacto:hover {
+	background-color: #4fc2ba;
+}
+
+nav ul .logo img {
+	width: 40px;
+	height: 40px;
+}
+
+nav ul .logo {
+	width: 60px;
+	height: 60px;
+	align-content: center;
+	margin-right: auto;
+}
