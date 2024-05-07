@@ -4,6 +4,15 @@
 	margin: 0;
 }
 
+@font-face {
+    font-family: "nunito";
+    src: url("fonts/Nunito/static/Nunito-Regular.ttf");
+}
+
+html {
+    font-family: "nunito";
+}
+
 /* Estilo del menú de navegación */
 
 nav {
