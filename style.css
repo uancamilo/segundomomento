@@ -5,22 +5,28 @@
 }
 
 @font-face {
-    font-family: "nunito";
-    src: url("fonts/Nunito/static/Nunito-Regular.ttf");
+	font-family: "nunito";
+	src: url("fonts/Nunito/static/Nunito-Regular.ttf");
+}
+
+@font-face {
+	font-family: "crafty-girls";
+	src: url("fonts/Crafty_Girls/CraftyGirls-Regular.ttf");
 }
 
 html {
-    font-family: "nunito";
+	font-family: "nunito";
 }
 
 /* Estilo del menú de navegación */
 
 nav {
-    position: sticky;
-    background-color: white; /* Color de fondo del navbar */
-    margin-top: 5px;
-	height: 60px;
+	position: fixed;
+	width: 100%;
+	padding: 5px 0;
+	background-color: white; /* Color de fondo del navbar */
 	align-content: center;
+	z-index: 1000;
 }
 
 nav ul {
@@ -28,8 +34,8 @@ nav ul {
 	margin: 0 auto; /* Centra el componente horizontalmente */
 	display: flex;
 	justify-content: center; /* Centra los elementos hijos horizontalmente dentro del componente */
-    max-width: 1152px;
-    gap: 10px;
+	max-width: 1152px;
+	gap: 10px;
 }
 
 nav ul li a {
@@ -63,6 +69,84 @@ nav ul .logo img {
 nav ul .logo {
 	width: 60px;
 	height: 60px;
-	align-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-right: auto;
 }
+
+/* Estilos para el fondo */
+
+.fondo {
+	background-image: url("images/LOS\ CACHORROS\ DEL\ ORIENTE.png");
+	background-size: cover; /* Cubrir completamente el área */
+	background-position: center; /* Centrar la imagen */
+}
+
+.contenedor {
+	max-width: 1152px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contendor-titulo {
+	padding-top: 15rem;
+	max-width: 760px;
+	transform: rotate(-20deg);
+}
+
+h1 {
+	font-family: "crafty-girls";
+	text-align: center;
+	letter-spacing: -7px;
+	font-size: 96px;
+	line-height: 1;
+	font-weight: lighter;
+}
+h2 {
+	font-size: 36px;
+	font-weight: lighter;
+}
+
+h2 mark {
+	background-color: rgba(255, 255, 255, 75%);
+	letter-spacing: -1px;
+}
+
+/* CTA Button */
+
+.call-to-action {
+	max-width: 1152px;
+	display: flex;
+	justify-content: end;
+	margin: 0 auto;
+}
+
+.call-to-action div {
+	max-width: 425px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.call-to-action div button {
+	width: 100%;
+	display: inline-block;
+    padding: 10px 20px; /* Ajusta el padding según sea necesario */
+    font-size: 32px; /* Tamaño de fuente */
+    font-family: "nunito";
+	font-weight: bold;
+	background-color: #ffffff; /* Color de fondo */
+    border: none; /* Quita el borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-align: center; /* Alinea el texto al centro */
+    text-decoration: none; /* Quita la subrayado del texto */
+    transition: background-color 0.3s;
+}
+
+.call-to-action div h3 {
+	font-size: 36px;
+	text-align: end;
+}
+
