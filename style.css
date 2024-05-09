@@ -38,8 +38,13 @@ nav ul {
 	gap: 10px;
 }
 
+nav ul li {
+	text-align: center;
+}
+
 nav ul li a {
 	text-decoration: none;
+
 	color: inherit;
 	display: inline-block;
 	padding: 20px 16px;
@@ -75,8 +80,156 @@ nav ul .logo {
 	margin-right: auto;
 }
 
+/* Estilos de call-to-action */
+
+.fondo {
+	background-image: url("images/LOS\ CACHORROS\ DEL\ ORIENTE.png");
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.contenedor {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	max-width: 1152px;
+	height: 50vh;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "crafty-girls";
+	text-align: center;
+}
+
+h2 {
+	font-size: 12px;
+}
+
+h2 mark {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.titulo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transform: rotate(-20deg);
+}
+
+.btn-cta {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-cta div {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	gap: 10px;
+}
+
+.btn-cta div button {
+	padding: 5px 10px;
+	font-family: "nunito";
+	font-weight: bold;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	transition: background-color 0.3s;
+}
+
+.btn-cta div h3 {
+	font-size: 10px;
+	text-align: center;
+}
+
+/* Estilos media responsive*/
+
 @media screen and (max-width: 425px) {
 	nav ul {
 		flex-direction: column;
+	}
+
+	nav ul .logo {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contenedor {
+		height: 250px;
+		padding: 10px 20px;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 425px) {
+	nav ul {
+		gap: 0;
+	}
+	.contenedor {
+		height: 40vh;
+		padding: 50px 20px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.contenedor {
+		height: 70vh;
+		padding: 50px 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.btn-cta div button {
+		font-size: 16px;
+	}
+
+	.btn-cta div h3 {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.contenedor {
+		height: 80vh;
+		padding: 50px 20px;
+	}
+
+	h1 {
+		font-size: 64px;
+	}
+
+	h2 {
+		font-size: 32px;
+		text-align: center;
+	}
+	.btn-cta div button {
+		font-size: 24px;
+	}
+
+	.btn-cta div h3 {
+		font-size: 24px;
 	}
 }
