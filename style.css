@@ -156,6 +156,7 @@ h4 {
 
 footer {
 	margin-top: -1px;
+	padding-bottom: 50px;
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='22560' height='400' preserveAspectRatio='none' viewBox='0 0 22560 400'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1087%26quot%3b)' fill='none'%3e%3crect width='22560' height='400' x='0' y='0' fill='rgba(79%2c 194%2c 186%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c319 C 225.6%2c271.6 676.8%2c93.2 1128%2c82 C 1579.2%2c70.8 1804.8%2c248.8 2256%2c263 C 2707.2%2c277.2 2932.8%2c165.2 3384%2c153 C 3835.2%2c140.8 4060.8%2c193.8 4512%2c202 C 4963.2%2c210.2 5188.8%2c167.8 5640%2c194 C 6091.2%2c220.2 6316.8%2c368.6 6768%2c333 C 7219.2%2c297.4 7444.8%2c12.2 7896%2c16 C 8347.2%2c19.8 8572.8%2c354 9024%2c352 C 9475.2%2c350 9700.8%2c23.6 10152%2c6 C 10603.2%2c-11.6 10828.8%2c240.4 11280%2c264 C 11731.2%2c287.6 11956.8%2c135.2 12408%2c124 C 12859.2%2c112.8 13084.8%2c198 13536%2c208 C 13987.2%2c218 14212.8%2c138 14664%2c174 C 15115.2%2c210 15340.8%2c414.6 15792%2c388 C 16243.2%2c361.4 16468.8%2c62.6 16920%2c41 C 17371.2%2c19.4 17596.8%2c256.2 18048%2c280 C 18499.2%2c303.8 18724.8%2c143.4 19176%2c160 C 19627.2%2c176.6 19852.8%2c363.8 20304%2c363 C 20755.2%2c362.2 20980.8%2c180.6 21432%2c156 C 21883.2%2c131.4 22334.4%2c223.2 22560%2c240L22560 400L0 400z' fill='rgba(37%2c 118%2c 112%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1087'%3e%3crect width='22560' height='400' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -165,6 +166,10 @@ footer {
 
 footer > div:nth-child(2) ul {
 	list-style: none;
+}
+
+footer :first-child p {
+	text-align: center;
 }
 
 footer > div:nth-child(2) ul li {
