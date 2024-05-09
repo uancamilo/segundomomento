@@ -224,6 +224,48 @@ footer > div:nth-child(3) ul li a {
 	fill: #4fc2ba;
 }
 
+/* Estilos Tarjetas */
+
+.contenedor-tarjetas {
+	margin: 0 auto;
+	max-width: 1152px;
+}
+
+.tarjetas {
+	margin: 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+.tarjetas .tarjeta {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.tarjetas div img {
+	display: block;
+	margin: 0 auto;
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.info-tarjetas p:nth-child(1) {
+	font-weight: bold;
+}
+
+.info-tarjetas p:nth-child(2) {
+	font-style: italic;
+}
+
+.info-tarjetas p:nth-child(3) {
+	text-align: justify;
+}
+
 /* Estilos media responsive*/
 
 @media screen and (max-width: 425px) {
@@ -272,6 +314,10 @@ footer > div:nth-child(3) ul li a {
 		display: flex;
 		justify-content: space-around;
 	}
+
+	.contenedor-tarjetas {
+		padding: 50px 0;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -296,6 +342,11 @@ footer > div:nth-child(3) ul li a {
 	.btn-cta div h3 {
 		font-size: 16px;
 	}
+
+	.tarjetas {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
@@ -318,5 +369,9 @@ footer > div:nth-child(3) ul li a {
 
 	.btn-cta div h3 {
 		font-size: 24px;
+	}
+
+	.tarjetas {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
