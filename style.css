@@ -291,6 +291,38 @@ footer > div:nth-child(3) ul li a {
 	justify-content: center;
 }
 
+/* Fomulario */
+
+form {
+	max-width: 90%;
+	margin: 0 auto;
+}
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+input,
+textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 15px;
+}
+
+.btn-telefono {
+	padding: 15px 25px;
+	background-color: #257670;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	float: right;
+}
+
+.btn-telefono:hover {
+	background-color: rgba(37, 118, 118, 0.5);
+}
+
 /* Estilos media responsive*/
 
 @media screen and (max-width: 425px) {
@@ -384,6 +416,10 @@ footer > div:nth-child(3) ul li a {
 	.tarjetas {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 40px;
+	}
+
+	form {
+		width: 50%;
 	}
 }
 
