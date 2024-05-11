@@ -291,6 +291,83 @@ footer > div:nth-child(3) ul li a {
 	justify-content: center;
 }
 
+/* Estilos Cachorros */
+
+.informacion {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.informacion div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cachorros div:hover div .informacion {
+	display: block;
+}
+
+.cachorros {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 10px;
+}
+
+.cachorros div {
+	border-radius: 10px;
+}
+
+.cachorros div div {
+	position: relative;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.cachorros div div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.cachorros :nth-child(1) {
+	grid-column: span 2;
+	grid-row: span 1;
+}
+
+.cachorros :nth-child(2) {
+	grid-column: span 1;
+	grid-row: span 2;
+}
+
+.cachorros :nth-child(7n + 1) {
+	grid-column: span 2;
+	grid-row: span 1;
+}
+
+.cachorros :nth-child(7n + 2) {
+	grid-column: span 1;
+	grid-row: span 2;
+}
+
+.cachorros :nth-child(7n + 4) {
+	grid-column: span 1;
+	grid-row: span 2;
+}
+
+.cachorros :nth-child(7n + 5) {
+	grid-column: span 3;
+	grid-row: span 1;
+}
+
 /* Fomulario */
 
 form {
