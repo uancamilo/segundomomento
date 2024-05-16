@@ -21,33 +21,38 @@ html {
 /* Estilo del menú de navegación */
 
 nav {
-	/* position: fixed; */
-	width: 100%;
-	padding: 5px 0;
-	background-color: white;
-	align-content: center;
-	z-index: 1000;
+	padding: 5px;
+	max-width: 1152px;
 }
 
 nav ul {
-	list-style-type: none;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-	max-width: 1152px;
+	display: grid;
 	gap: 10px;
+}
+
+nav ul li img {
+	display: block;
+	margin: 0 auto;
+	width: 40px;
+	height: auto;
 }
 
 nav ul li {
 	text-align: center;
+	border-radius: 5px;
+	list-style: none;
 }
 
 nav ul li a {
 	text-decoration: none;
 	color: inherit;
 	display: inline-block;
-	padding: 20px 16px;
-	border-radius: 10px;
+	width: 100%;
+	padding: 20px;
+}
+
+nav ul li:first-child a {
+	padding: 8px;
 }
 
 nav ul li a:hover:not(.link-contacto) {
@@ -65,18 +70,34 @@ nav ul li.contacto:hover {
 	background-color: #4fc2ba;
 }
 
-nav ul .logo img {
-	width: 40px;
-	height: 40px;
-}
+/* Media query para el navbar */
 
-nav ul .logo {
-	width: 60px;
-	height: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: auto;
+@media (min-width: 426px) {
+	nav ul {
+		grid-template-columns: repeat(2, 2fr);
+	}
+
+	nav ul li:last-child {
+		grid-column-end: span 2;
+	}
+}
+@media (min-width: 769px) {
+	nav {
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	nav ul li:first-child {
+		margin-right: auto; /* Empuja el primer elemento hacia la izquierda */
+	}
+
+	nav ul li:not(:first-child) {
+		margin-left: 10px; /* Agrega margen entre los elementos de la derecha */
+	}
 }
 
 /* Estilos de call-to-action */
@@ -398,132 +419,4 @@ textarea {
 
 .btn-telefono:hover {
 	background-color: rgba(37, 118, 118, 0.5);
-}
-
-/* Estilos media responsive*/
-
-@media screen and (max-width: 425px) {
-	nav ul {
-		flex-direction: column;
-	}
-
-	nav ul .logo {
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.contenedor {
-		height: 250px;
-		padding: 10px 20px;
-	}
-
-	h1 {
-		font-size: 18px;
-	}
-
-	h2 {
-		text-align: left;
-	}
-}
-
-@media screen and (min-width: 425px) {
-	nav ul {
-		gap: 0;
-	}
-	.contenedor {
-		height: 60vh;
-		padding: 50px 20px;
-	}
-
-	h1 {
-		font-size: 24px;
-	}
-
-	h2 {
-		font-size: 12px;
-		text-align: center;
-	}
-
-	footer > div:nth-child(2) ul {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.contenido {
-		padding: 50px 0;
-	}
-	.contenido-nosotros {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 50px;
-	}
-
-	.contenido-nosotros :nth-child(3) {
-		order: 4;
-	}
-	.contenido-nosotros :nth-child(6) {
-		order: 5;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.contenedor {
-		height: 70vh;
-		padding: 50px 20px;
-	}
-
-	h1 {
-		font-size: 36px;
-	}
-
-	h2 {
-		font-size: 24px;
-		text-align: center;
-	}
-
-	.btn-cta div button {
-		font-size: 16px;
-	}
-
-	.btn-cta div h3 {
-		font-size: 16px;
-	}
-
-	.tarjetas {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 40px;
-	}
-
-	form {
-		width: 50%;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.contenedor {
-		height: 80vh;
-		padding: 50px 20px;
-	}
-
-	h1 {
-		font-size: 64px;
-	}
-
-	h2 {
-		font-size: 32px;
-		text-align: center;
-	}
-
-	.btn-cta div button {
-		font-size: 24px;
-	}
-
-	.btn-cta div h3 {
-		font-size: 24px;
-	}
-
-	.tarjetas {
-		grid-template-columns: repeat(3, 1fr);
-	}
 }
